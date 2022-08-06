@@ -75,6 +75,8 @@ int		PhoneBook::_get_index(void){
 	while (num < 0 || num > 7){
 		std::cout << "Choose contact by number (0 - 7): ";
 		std::cin >> num;
+		if ( ( num  < 48 ) || ( num > 55 ))
+			continue ;
 	}
 	std::cout << std::endl;
 	return	num;
